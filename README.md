@@ -13,7 +13,7 @@ internet connection.
 
     pip install bokeh-resources
     
-Then run install.py to install the extension to jupyter and to create the symlink (see 'Updating' below)
+Then run `install.py` to install the extension to jupyter and to create the symlink (see 'Updating' below)
 
 ## Usage:
 
@@ -29,7 +29,5 @@ In bokeh:
 
 ## Updating:
 
-This extension creates a symlink (or a directory junction on Windows). This means that it is resilient to bokeh updates
+The extension creates a symlink (or a directory junction on Windows). This means that it is resilient to bokeh updates
 (= the extension does not need to be updated when the bokeh is updated to next version).
-
-
