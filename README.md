@@ -19,13 +19,17 @@ Then run `install.py` to install the extension to jupyter and to create the syml
 
 In bokehlab:
   
-    %bokehlab local
+``` python
+%bokehlab local
+```
     
 In bokeh:
 
-    from bokeh.io import output_notebook
-    from bokeh.resources import Resources
-    output_notebook(Resources('server', root_url='/nbextensions/bokeh_resources'))
+``` python
+from bokeh.io import output_notebook
+from bokeh.resources import Resources
+output_notebook(Resources('server', root_url='/nbextensions/bokeh_resources'))
+```
 
 ## Updating:
 
