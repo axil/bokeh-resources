@@ -14,7 +14,7 @@ setuptools.setup(
     description="Jupyter extension to serve bokeh resources (js and css files).",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=['bokeh'],
+    install_requires=['bokeh', 'notebook'],
     packages=['bokeh_resources'],
     classifiers=[
         "Programming Language :: Python :: 3",
