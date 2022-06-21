@@ -11,8 +11,22 @@ Bokeh (https://bokeh.org/) Python plotting library has two main modes for servin
 ## Installation: 
 
     pip install bokeh-resources
+    python -m bokeh-resources.install
     
-Then run `install.py` to install the extension to jupyter and to create the symlink (see 'Updating' below)
+Or alternatively
+
+    git clone https://github.com/axil/bokeh-resources
+    cd bokeh_resources
+    python install.py
+    
+This will install the extension to jupyter and to create the symlink (see 'Updating' below)
+
+After this the package itself can be safely uninstalled (`pip uninstall bokeh-resources`).
+
+To uninstall the extension run
+    
+    jupyter nbextensions uninstall bokeh_resources
+
 
 ## Usage:
 
@@ -32,5 +46,8 @@ output_notebook(Resources('server', root_url='/nbextensions/bokeh_resources'))
 
 ## Updating:
 
-The extension creates a symlink (or a directory junction on Windows). This means that it is resilient to bokeh updates
+Serving is performed through a symbolic link (or a directory junction on Windows). 
+
+This means that it is resilient to bokeh updates.
+
 (= the extension does not need to be updated when `bokeh` is updated to the next version).
