@@ -7,15 +7,16 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bokeh-resources",
-    version="0.1",
+    version="0.2",
     author='Lev Maximov',
     author_email='lev.maximov@gmail.com',
     url='https://github.com/axil/bokeh-resources',
     description="Jupyter extension to serve bokeh resources (js and css files).",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=['bokeh', 'notebook'],
-    packages=['bokeh_resources'],
+    install_requires=['bokeh'],
+    packages=['bokeh_resources', 'bokeh_resources.bokeh_resources'],
+    package_data={'': ['*.js']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
