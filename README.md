@@ -6,18 +6,24 @@ Bokeh (https://bokeh.org/) Python plotting library has two main modes for servin
    
    - 'inline' mode increases the size of ipynb files by 6Mb
 
-`bokeh-resources` is a jupyter extension that makes jupyter serve bokeh files locally. It keeps the size of ipynb files small and works offline as well.
+`bokeh-resources` is a jupyter extension that makes jupyter serve bokeh files locally. 
+
+It keeps the size of ipynb files small and works offline as well.
  
 ## Installation: 
 
-    pip install bokeh-resources
-    python -m bokeh-resources.install
+``` bash
+pip install bokeh-resources
+python -m bokeh-resources.install
+```
     
 Or alternatively
 
-    git clone https://github.com/axil/bokeh-resources
-    cd bokeh_resources
-    python install.py
+``` bash
+git clone https://github.com/axil/bokeh-resources
+cd bokeh_resources
+python install.py
+```
     
 This will install the extension to jupyter and to create the symlink (see 'Updating' below)
 
