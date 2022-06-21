@@ -4,7 +4,7 @@ Bokeh (https://bokeh.org/) Python plotting library has two main modes for servin
   
    - 'cdn' (=content distribution network) mode needs internet connection every time you open the notebook
    
-   - 'inline' mode increases size of ipynb files by 6Mb
+   - 'inline' mode increases the size of ipynb files by 6Mb
 
 `bokeh-resources` is a jupyter extension that makes jupyter serve bokeh files locally. It keeps the size of ipynb files small and works offline as well.
  
